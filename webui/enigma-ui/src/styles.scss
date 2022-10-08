@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+html, body{
+  width: 100vw;
+  height: 100vh;
+  margin:0;
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+button{
+ // padding:0.5em
+}
+
+
+.rotating-object:focus,
+.rotating-object:checked,
+.rotating-object:active,
+.rotating-object:future{
+  transform: rotate(360deg);
+  transition: transform 450ms ease-in-out;
+}
+
+p mat-form-field {
+  width: 100%;
+}
+
+
+.mat-menu-item .mat-icon,
+.mat-button-wrapper .mat-icon
+{
+  height: unset;
+  width: unset;
+}
